@@ -1,0 +1,183 @@
+.navbar-brand{
+    font-size:20px;
+}
+
+.navbar{
+    z-index: 99;
+    transition: all 0.5s;
+}
+
+.nav-item{
+    text-align:right;
+}
+
+.navbar-scrolled{
+    background-color:#f8f9fa;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.titleslide{
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+}
+
+#aboutimage{
+    transform:rotate(75deg); 
+    max-width:70%;
+    height:auto;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.contact{
+    position:relative;
+    min-height:100vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-size:cover;
+    background: url("Images/restaurantimg.png");
+}
+
+.contact .content{
+    text-align:center;
+    color:white;
+}
+
+#contactdiv{
+    position:relative;
+}
+
+#aboutdiv{
+    position:relative;
+    bottom:90px;
+}
+
+.contacttitle{
+    color:#b3161d;
+}
+.contacttext{
+    color:#f8f9fa;
+}
+
+#contactcontainer{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.cbox{
+    position:relative;
+    padding:20px 0;
+    display:flex;
+}
+
+.cicon{
+    min-width:60px;
+    height:60px;
+    display:flex;
+    background-color: white;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:22px;
+}
+
+.container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+
+.ctext{
+    display:flex;
+    font-size:16px;
+    margin-left:20px;
+    flex-direction:column;
+}
+
+.contactForm{
+    width:40%;
+    padding:40px;
+    background:white;
+}
+
+.contactForm .inputBox{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width:100%;
+    padding:5px 0;
+    font-size:16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid;
+    outline:none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position:absolute;
+    left:0;
+    padding:5px 0 0 2px;
+    font-size:16px;
+    margin:10px 0;
+    pointer-events:none;
+    transition:0.5s;
+    
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span{
+    font-size:12px;
+    transform: translateY(-24px);
+}
+
+#submitbutton{
+    width:100px;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    background-color:#b3161d;
+    color:white;
+
+}
+
+
+@media(max-width:991px){
+    .contact{
+        padding:50px;
+    }
+
+    #contactcontainer{
+        flex-direction:column;
+    }
+
+    #contactcontainer .contactInfo{
+        margin-bottom:40px;
+        width:100%;
+    }
+
+    .contactForm{
+        width:100%;
+    }
+    
+}

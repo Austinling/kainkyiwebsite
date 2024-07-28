@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky navbar-scrolled">
+        <div class = "container">
+            <a class="navbar-brand" href="#">
+                <img src = Images/icon.png width = "40px" height = "40px" >
+                Kain Kyi
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#aboutdiv" id = "about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#" id = "menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id = "review">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactdiv" id = "contact">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+        <div class = "row">
+          <div class = "col col-12">
+            <img src = "Images/test.png" class = "titleslide">
+          </div>
+        </div>
+        
+        <div id = "aboutdiv"></div>
+
+        <div class = "row" >
+          <div class = "col-6" style ="background-color:#f8f9fa;">
+              <img src = "Images/porkroll.png" id = "aboutimage">
+          </div>
+
+          <div class = "col-6" style = "background-color:#f8f9fa;">
+            <div id = "abouttitle" class ="container-fluid">
+              <h1 style = "font-size:3vw;padding-top:3vw;">About Kain Kyi</h1>
+              <h5 style = "font-size:2vw;" >Since 1964</h5>
+              <p style = "font-size:1vw;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            </div>
+          </div>
+      </div>
+
+      <div id = "contactdiv"></div>
+
+      <section class = "contact">
+        <div class = "content" id = "contactlink">
+          <h2 style  = "color:#b3161d;">Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit, error rem fugiat, quod ipsa numquam qui deserunt voluptatum quidem architecto? Vitae corrupti necessitatibus voluptates rerum temporibus? Asperiores, quisquam adipisci.</p>
+        </div>
+      
+        <div class ="container" id  = "contactcontainer">
+          <div class = "contactInfo">
+            <div class = "box cbox">
+              <div class ="icon cicon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+
+              <div class = "text ctext">
+                <h3 class = "contacttitle">Address</h3>
+                <p class = "contacttext">29th Street Between 81st and 82nd</p>
+              </div>
+            </div>
+
+            <div class = "box cbox">
+              <div class ="icon cicon">
+                <i class="bi bi-envelope"></i>
+              </div>
+
+              <div class = "text ctext">
+                <h3 class = "contacttitle">Email</h3>
+                <p class = "contacttext">austinlingaungmyat1@gmail.com</p>
+              </div>
+            </div>
+
+            <div class = "box cbox">
+              <div class ="icon cicon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+            
+              <div class = "text ctext">
+                <h3 class = "contacttitle">Phone Number</h3>
+                <p class = "contacttext">9592019150</p>
+              </div>
+            </div>
+          </div>
+
+          <div class = "contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div class = "inputBox">
+                <input type = "text" name = "" required = "required">
+                <span>Full Name</span>
+              </div>
+
+              <div class = "inputBox">
+                <input type = "text" name = "" required = "required">
+                <span>Email</span>
+              </div>
+
+              <div class = "inputBox">
+                <textarea required = "required"></textarea>
+                <span>Type your Message</span>
+              </div>
+
+              <div class = "inputBox">
+                <input type ="submit" name = "" value = "Send" id ="submitbutton">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+
+        <div class="bg-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
+          <div class="container overflow-hidden">
+            <div class="row gy-3 gy-md-5 gy-xl-0 align-items-sm-center">
+              <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
+                <div class="footer-logo-wrapper text-center text-sm-start">
+                  <a href="#!">
+                    <img src="Images/icon.png" alt="KainKyi Logo" width="80px" >
+                  </a>
+                </div>
+              </div>
+      
+              <div class="col-xs-12 col-xl-6 order-2 order-xl-1">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary px-2 px-md-3" href="#aboutdiv">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary px-2 px-md-3" href="#!">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary px-2 px-md-3" href="#!">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary px-2 px-md-3" href="#contactdiv">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="col-xs-12 col-sm-6 col-xl-3 order-1 order-xl-2">
+                <div class="social-media-wrapper">
+                  <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
+                    <li class="me-3">
+                      <a href="#!" class="link-dark link-opacity-75-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

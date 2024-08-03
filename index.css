@@ -1,5 +1,12 @@
+body{
+    padding-top:66px;
+}
+
+
 .navbar-brand{
-    font-size:20px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .navbar{
@@ -9,7 +16,12 @@
 
 .nav-item{
     text-align:right;
+    font-family: "Libre Bodoni", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
 }
+
 
 .navbar-scrolled{
     background-color:#f8f9fa;
@@ -24,20 +36,32 @@
     overflow:hidden;
 }
 
-#aboutimage{
-    transform:rotate(75deg); 
-    max-width:70%;
-    height:auto;    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .sticky{
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
+
+.abouticon{
+    font-size:3em;
+}
+
+.insideaicon{
+    font-size:45px;
+}
+
+.rounded{
+    border-radius:10px;
+}
+
+.img-fluid{
+    max-width:100%;
+    height:auto;
+}
+
+.w-100{
+    width:100%;
+}
 
 .contact{
     position:relative;
@@ -161,6 +185,13 @@
 
 }
 
+.attractions .attractions-item {
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
 
 @media(max-width:991px){
     .contact{
@@ -180,4 +211,10 @@
         width:100%;
     }
     
+}
+
+@media(min-width:1400px){
+    .fillerspace{
+        margin-top:90px;
+    }
 }

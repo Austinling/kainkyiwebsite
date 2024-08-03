@@ -1,0 +1,95 @@
+
+body{
+    padding-top:80px;
+
+}
+
+.menu-div{
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.itemSelect{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.topMenuSelection{
+    color:white;
+    background-color:lightgrey;
+    transition:all 1s;
+}
+
+.onSelect{
+    color:lightgrey;
+    background-color:white;
+    transition:all 1s;
+}
+
+.specialRound{
+    border-radius:25px;
+}
+
+.white{
+    color:white;
+    transition:all 1s;
+}
+
+.red{
+    color:#b3161d;
+    transition:all 1s;
+}
+
+.chooseType{
+    background-color:#b3161d;
+    border:solid 1px white;
+    transition:all 1s;
+}
+
+.changeType{
+    background-color:white;
+    border:solid 1px #b3161d;
+    transition:all 1s;
+}
+
+.uremove{
+    text-decoration:none;
+    border:2px solid white;
+}
+
+.menuimage{
+    max-width:100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menuimagediv{
+    width:50px;
+    height: 150px;
+
+}
+
+.pricetag{
+    color:#b3161d;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nametag{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media(max-width:992px){
+
+}
+
+@media(min-width:992px){
+
+}
+
+
+
+@media(max-width:576px){
+
+}

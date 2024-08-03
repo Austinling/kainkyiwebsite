@@ -9,25 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  </head>
+    <link rel="stylesheet" href="Libraries/animate.css">
+ </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky navbar-scrolled">
         <div class = "container">
             <a class="navbar-brand" href="#">
-                <img src = Images/icon.png width = "40px" height = "40px" >
+                <img src = Images/icon.png width = "40px" height = "40px">
                 Kain Kyi
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <div> 
+                  <span class="navbar-toggler-icon"></span>
+              </div>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
+                <a class="nav-link" href="index.html" id = "home" style = "color:#b3161d;">Home</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="#aboutdiv" id = "about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#" id = "menu">Menu</a>
+                <a class="nav-link" href="menu.html" id = "menu">Menu</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id = "review">Reviews</a>
@@ -44,94 +53,209 @@
             <img src = "Images/test.png" class = "titleslide">
           </div>
         </div>
-        
-        <div id = "aboutdiv"></div>
 
-        <div class = "row" >
-          <div class = "col-6" style ="background-color:#f8f9fa;">
-              <img src = "Images/porkroll.png" id = "aboutimage">
-          </div>
-
-          <div class = "col-6" style = "background-color:#f8f9fa;">
-            <div id = "abouttitle" class ="container-fluid">
-              <h1 style = "font-size:3vw;padding-top:3vw;">About Kain Kyi</h1>
-              <h5 style = "font-size:2vw;" >Since 1964</h5>
-              <p style = "font-size:1vw;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="Images/spicy.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Images/spicy.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Images/spicy.png" alt="Third slide">
             </div>
           </div>
+        </div>
+
+        <div id = "aboutdiv"></div>
+
+      <div class = "container">
+        <div class = "row" >
+          <div class = "col-xl-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+            <h4 style = "color:#b3161d;margin-top:20px;">About Kain Kyi</h4>
+            <h1 class = "mb-4">The Best Noodles in Town</h1>
+            <p class = "mb-5" style  = "color:lightgrey;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+
+            <div class = "row g-4 fillerspace">
+              <div class = "col-md-6">
+                <div class = "d-flex">
+                  <div class = "imgicon me-3 mb-6">
+                    <i class="bi bi-shop abouticon"></i>
+                  </div>
+
+                  <div>
+                    <h4>Beautiful Decor</h4>
+                    <p>Filler text for now</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class = "col-md-6">
+                <div class = "d-flex">
+                  <div class = "imgicon me-3 mb-1">
+                    <i class="bi bi-cash abouticon"></i>
+                  </div>
+
+                  <div>
+                    <h4>Affordable Pricing</h4>
+                    <p>Filler text for now</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class = "col-md-6">
+                <div class = "d-flex">
+                  <div class = "imgicon me-3 mb-1">
+                    <i class="bi bi-hand-thumbs-up abouticon"></i>
+                  </div>
+
+                  <div>
+                    <h4>Quality Service</h4>
+                    <p>Filler text for now</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class = "col-md-6">
+                <div class = "d-flex">
+                  <div class = "imgicon me-3 mb-1">
+                    <i class="bi bi-emoji-laughing abouticon"></i>
+                  </div>
+
+                  <div>
+                    <h4>Delicious Food</h4>
+                    <p>Filler text for now</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-xl-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class = "rounded">
+              <div class = "row">
+                <div class = "col-lg-12">
+                  <div class = "rounded mb-4">
+                    <img src = "Images/restaurantimg.png" class = "rounded w-100 img-fluid position-relative" style = "margin-top:40px;">
+                  </div>
+                </div>
+              </div>
+
+              <div class = "row mb-3">
+                <div class = "col-6">
+                  <div class = "rounded text-center p-4 h-100"  style = "background-color:#b3161d;">
+                    <div class = "sectionicon mx-auto mb-3 ">
+                      <i class="bi bi-book insideaicon" style = "color:white;"></i>
+                    </div>
+
+                    <div class = "sectiontext mb-3">
+                      <span class = "text-white fs-2 fw-bold">100</span>
+                      <span class = "h1 fw-bold text-white">+</span>
+                    </div>
+
+                    <h5 class = "text-white">Menu Items</h5>
+
+                  </div>
+                </div>
+                
+                <div class = "col-6">
+                  <div class = "rounded text-center p-4 h-100"  style = "background-color:#b3161d;">
+                    <div class = "sectionicon mx-auto mb-3 ">
+                      <i class="bi bi-people insideaicon" style = "color:white;"></i>
+                    </div>
+
+                    <div class = "sectiontext mb-3">
+                      <span class = "text-white fs-2 fw-bold">10 K</span>
+                      <span class = "h1 fw-bold text-white">+</span>
+                    </div>
+
+                    <h5 class = "text-white">Customers</h5>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id = "contactdiv"></div>
 
       <section class = "contact">
-        <div class = "content" id = "contactlink">
+        <div class = "content fadeInUp wow" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;animation-duration:1s" id = "contactlink">
           <h2 style  = "color:#b3161d;">Contact Us</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit, error rem fugiat, quod ipsa numquam qui deserunt voluptatum quidem architecto? Vitae corrupti necessitatibus voluptates rerum temporibus? Asperiores, quisquam adipisci.</p>
         </div>
       
         <div class ="container" id  = "contactcontainer">
-          <div class = "contactInfo">
+          <div class = "contactInfo fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
             <div class = "box cbox">
               <div class ="icon cicon">
                 <i class="bi bi-geo-alt-fill"></i>
               </div>
 
-              <div class = "text ctext">
+              <div class = "text ctext fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
                 <h3 class = "contacttitle">Address</h3>
                 <p class = "contacttext">29th Street Between 81st and 82nd</p>
               </div>
             </div>
 
-            <div class = "box cbox">
+            <div class = "box cbox fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
               <div class ="icon cicon">
                 <i class="bi bi-envelope"></i>
               </div>
 
-              <div class = "text ctext">
+              <div class = "text ctext fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
                 <h3 class = "contacttitle">Email</h3>
                 <p class = "contacttext">austinlingaungmyat1@gmail.com</p>
               </div>
             </div>
 
-            <div class = "box cbox">
+            <div class = "box cbox fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
               <div class ="icon cicon">
                 <i class="bi bi-telephone-fill"></i>
               </div>
             
-              <div class = "text ctext">
+              <div class = "text ctext fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
                 <h3 class = "contacttitle">Phone Number</h3>
                 <p class = "contacttext">9592019150</p>
               </div>
             </div>
           </div>
 
-          <div class = "contactForm">
-            <form>
+          <div class = "contactForm fadeInUp wow" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;animation-duration:1s">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+              <input type="hidden" name="access_key" value="9ef702a2-52fb-4490-929a-3bf69e326d09">
+
               <h2>Send Message</h2>
               <div class = "inputBox">
-                <input type = "text" name = "" required = "required">
+                <input type = "text" name = "name" required = "required">
                 <span>Full Name</span>
               </div>
 
               <div class = "inputBox">
-                <input type = "text" name = "" required = "required">
+                <input type = "text" name = "email" required = "required">
                 <span>Email</span>
               </div>
 
               <div class = "inputBox">
-                <textarea required = "required"></textarea>
+                <textarea required = "required" name="message"></textarea>
                 <span>Type your Message</span>
               </div>
 
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
               <div class = "inputBox">
-                <input type ="submit" name = "" value = "Send" id ="submitbutton">
+                <input type ="submit" name = "submit" value = "Send" id ="submitbutton">
               </div>
             </form>
           </div>
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 
         <div class="bg-light py-3 py-md-5 py-xl-8 border-top border-light-subtle">
           <div class="container overflow-hidden">
@@ -139,7 +263,7 @@
               <div class="col-xs-12 col-sm-6 col-xl-3 order-0 order-xl-0">
                 <div class="footer-logo-wrapper text-center text-sm-start">
                   <a href="#!">
-                    <img src="Images/icon.png" alt="KainKyi Logo" width="80px" >
+                    <img src="Images/icon.png" alt="KainKyi Logo" width="80px" id = "footerlogo">
                   </a>
                 </div>
               </div>
@@ -166,7 +290,7 @@
                   <ul class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-sm-end">
                     <li class="me-3">
                       <a href="#!" class="link-dark link-opacity-75-hover">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style = "color:blue;">
                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                         </svg>
                       </a>
@@ -178,7 +302,11 @@
           </div>
         </div>
       </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
+    <script src="Libraries/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="index.js"></script>   
   </body>
 </html>

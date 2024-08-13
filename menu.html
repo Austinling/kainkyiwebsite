@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" type="text/css" href="menu.css">
         <link rel="stylesheet" href="Libraries/animate.css">
+        <script src = "search.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@
                     <a class="nav-link" href="menu.html" id = "menu">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id = "review">Reviews</a>
+                        <a class="nav-link" href="index.html#revreach" id = "review">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contactdiv" id = "contact">Contact Us</a>
@@ -50,103 +51,60 @@
             </div>
         </nav>
 
-        <div class = "container-fluid p-4">
-            <div class = "justify-content-center" style = "display:flex;">
-                <a href = "#" class = "px-4 topMenuSelection rounded uremove" id = "selection">Food Menu</a>
-                <a href = "#" class = "px-4 topMenuSelection rounded uremove" id = "selection1">Drinks Menu</a>
+        <div class = "container" style = "position:relative;">
+            <div class = "container searchcontainer d-flex justify-content-end align-items-end" style = "padding-left:12px;padding-bottom:20px;">
+                <form>
+                    <i class="bi bi-search"></i>
+                        <input type = "text" placeholder = "Search" data-search>  
+                </form>  
+                <button class = "filter" id = "filter">Filter</button>  
             </div>
 
-            <hr style = "color:lightgrey;opacity:0.8">
-
-            <div class = "container-fluid d-flex justify-content-center">
-                <div class = "itemSelect chooseType specialRound text-center" id = "sr">
-                    <a href = "#" id = "sri" class = "white"style = "text-decoration:none;">Chicken</a>
+            <div class = "container hide" id = "bigdisplay" style = "background-color:lightgrey;border:1px solid grey; width:15.25rem;position:absolute;z-index:3;right:0.625rem;top:-5px;">
+                <div class = "container d-flex align-items-center justify-content-end" style = "margin-top:10px;">
+                    <i class="bi bi-x-octagon" style = "font-size:30px;" id = "crossx"></i>
                 </div>
-
-                <div class = "itemSelect chooseType specialRound text-center" id = "sr1">
-                    <a href = "#" id = "sri1" class = " white" style = "text-decoration:none;" >Chicken</a>
+            
+                <div class = "container category" >
+                  <h5 style = "border-bottom:1px solid black;">Menu Categories</h5>
                 </div>
+                <div class = "container sections d-flex justify-content-center align-items-center">
+                    <button class = "sbutton" id = "all">All</button>
+                    <button class = "sbutton" id = "chicken">Chicken</button>
+                    <button class = "sbutton" id = "vegetarian">Vegetarian</button>
 
-                <div class = "itemSelect chooseType specialRound text-center" id = "sr2">
-                    <a href = "#" id = "sri2" class =  "white" style = "text-decoration:none;">Chicken</a>
                 </div>
-
-                <div class = "itemSelect chooseType specialRound text-center" id = "sr3">
-                    <a href = "#" id = "sri3" class = "white" style = "text-decoration:none;">Chicken</a>
+                <div class = "container sections d-flex justify-content-center align-items-center"></div>
+                    <button class = "sbutton" id = "pork">Pork</button>
+                    <button class = "sbutton" id = "seafood">Seafood</button>
+                    <button class = "sbutton" id = "fish">Fish</button>
                 </div>
-            </div>
+              </div>
         </div>
 
-        <div class = "container-fluid px-4">
-            <div class = "row g-4 d-flex justify-content-center menurow row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-xs-2">
-
-                <div class = "col rounded px-3">
-                    <div class = "rounded menu-div " style = "background-color:#f8f9fa;">
-                        <div class = "container" style = "position:relative">
-                            <div class = "menuimagediv">
-                                <img src = "Images/porkroll.png" class = "menuimage">
+            <div class = "container-fluid px-4" >
+                <div class = "row g-4 d-flex justify-content-center menurow row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-xs-2" data-user-cards-container>
+                    <template data-user-template>
+                        <div class = "col rounded px-3">
+                            <div class = "rounded menu-div " style = "background-color:#f8f9fa;">
+                                <div class = "container card" style = "position:relative">
+                                    <div class = "menuimagediv d-flex">
+                                        <img src = "" class = "menuimage" style = "align-self:center" data-image>
+                                    </div>
+                                    <div class = "itemnamediv">
+                                        <h4 class = "text-center nametag"  data-name>Fried Porkroll</h4>
+                                    </div>
+                                    <div class = "itempricediv" >
+                                        <p class = "text-center pricetag" data-cost>13000 MMK</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class = "itemnamediv">
-                                <h4 class = "text-center nametag">Fried Porkroll</h4>
-                            </div>
-                            <div class = "itempricediv">
-                                <p class = "text-center pricetag">13000 MMK</p>
-                            </div>
-                        </div>
-                    </div>
+                        </div>  
+                    </template>    
                 </div>
-
-                <div class = "col sepcialRound px-3">
-                    <div class = "rounded menu-div" style = "background-color:#f8f9fa;">
-                        <div class = "container" style = "position:relative">
-                            <div class = "menuimagediv">
-                                <img src = "Images/porkroll.png" class = "menuimage">
-                            </div>
-                            <div class = "itemnamediv">
-                                <h4 class = "text-center nametag">Fried Porkroll</h4>
-                            </div>
-                            <div class = "itempricediv">
-                                <p class = "text-center pricetag">13000 MMK</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "col rounded px-3">
-                    <div class = "rounded menu-div" style = "background-color:#f8f9fa;">
-                        <div class = "container" style = "position:relative">
-                            <div class = "menuimagediv">
-                                <img src = "Images/porkroll.png" class = "menuimage">
-                            </div>
-                            <div class = "itemnamediv">
-                                <h4 class = "text-center nametag">Fried Porkroll</h4>
-                            </div>
-                            <div class = "itempricediv">
-                                <p class = "text-center pricetag">13000 MMK</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class = "col rounded px-3">
-                    <div class = "rounded menu-div" style = "background-color:#f8f9fa;">
-                        <div class = "container" style = "position:relative">
-                            <div class = "menuimagediv">
-                                <img src = "Images/porkroll.png" class = "menuimage">
-                            </div>
-                            <div class = "itemnamediv">
-                                <h4 class = "text-center nametag">Fried Porkroll</h4>
-                            </div>
-                            <div class = "itempricediv">
-                                <p class = "text-center pricetag">13000 MMK</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
             </div>
-        </div>
+
+
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="menu.js"></script>

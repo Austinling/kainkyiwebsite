@@ -2,6 +2,7 @@ body{
     padding-top:66px;
 }
 
+/*Navbar*/
 
 .navbar-brand{
   font-family: "Play", sans-serif;
@@ -28,6 +29,12 @@ body{
     box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .titleslide{
     width:100%;
     background-position: center;
@@ -36,11 +43,7 @@ body{
     overflow:hidden;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+/*About Us Page*/
 
 .abouticon{
     font-size:3em;
@@ -63,6 +66,13 @@ body{
     width:100%;
 }
 
+#aboutdiv{
+    position:relative;
+    bottom:90px;
+}
+
+/*Contact Us Page */
+
 .contact{
     position:relative;
     min-height:100vh;
@@ -82,11 +92,6 @@ body{
 
 #contactdiv{
     position:relative;
-}
-
-#aboutdiv{
-    position:relative;
-    bottom:90px;
 }
 
 .contacttitle{
@@ -185,11 +190,34 @@ body{
 
 }
 
-.attractions .attractions-item {
-    position: relative;
-    border-radius: 10px;
-    transition: 0.5s;
-    z-index: 1;
+/*Reviews */
+
+.revimg{
+    height:80px;
+    width:80px;
+    border-radius:50%;
+}
+
+.fullrev{
+    height:400px;
+}
+
+.revtext{
+    font-size:15px;
+    color:lightgrey;
+}
+
+.revcontainer{
+    height:400px;
+    width:300px;
+    background-color:grey;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.star{
+    width:30px;
+    height:30px;
 }
 
 
@@ -210,6 +238,7 @@ body{
     .contactForm{
         width:100%;
     }
+
     
 }
 

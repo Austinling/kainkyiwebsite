@@ -1,59 +1,51 @@
 
 body{
     padding-top:80px;
+    background-color:lightgrey;
+}
 
+form{
+    width:200px;
+    height:55px;
+    display:flex;
+    width:100%;
+    background-color:white;
+    border-radius:25px;
+}
+
+form input{
+    flex:1;
+    border:none;
+    outline:none;
+}
+
+.filter{
+    border:none;
+    outline:none;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    height:55px;
+    width:100px;
+}
+
+.sbutton{
+    height:1.875rem;
+    border:1px solid black;
+    margin:5px;
+}
+
+.bi-search{
+    align-self:center;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 .menu-div{
     box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
-.itemSelect{
-    padding-left:10px;
-    padding-right:10px;
-}
-
-.topMenuSelection{
-    color:white;
-    background-color:lightgrey;
-    transition:all 1s;
-}
-
-.onSelect{
-    color:lightgrey;
-    background-color:white;
-    transition:all 1s;
-}
-
 .specialRound{
     border-radius:25px;
-}
-
-.white{
-    color:white;
-    transition:all 1s;
-}
-
-.red{
-    color:#b3161d;
-    transition:all 1s;
-}
-
-.chooseType{
-    background-color:#b3161d;
-    border:solid 1px white;
-    transition:all 1s;
-}
-
-.changeType{
-    background-color:white;
-    border:solid 1px #b3161d;
-    transition:all 1s;
-}
-
-.uremove{
-    text-decoration:none;
-    border:2px solid white;
 }
 
 .menuimage{
@@ -80,16 +72,7 @@ body{
     font-weight: 400;
 }
 
-@media(max-width:992px){
-
+.hide{
+    display:none;
 }
 
-@media(min-width:992px){
-
-}
-
-
-
-@media(max-width:576px){
-
-}

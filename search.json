@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Fried PorkRoll",
+        "cost": 13000,
+        "image": "Images/porkroll.png",
+        "type": "pork"
+    },
+
+    {
+        "name": "Fried Fish",
+        "cost": 13000,
+        "image": "Images/spicy.png",
+        "type": "fish"
+    },
+
+    {
+        "name": "Fried Chicken",
+        "cost": 13000,
+        "image": "Images/spicy.png",
+        "type": "chicken"
+    },
+
+    {
+        "name": "Fried Seafood",
+        "cost": 13000,
+        "image": "Images/spicy.png",
+        "type": "seafood"
+    },
+
+    {
+        "name": "Fried Veg",
+        "cost": 13000,
+        "image": "Images/spicy.png",
+        "type": "vegetarian"
+    },
+
+    {
+        "name": "Fried Chicken",
+        "cost": 13000,
+        "image": "Images/porkskinsoup.png",
+        "type": "vegetarian"
+    }
+
+]
